@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.4;
+  background: #fff;
+  color: #444;
+  height: 100vh;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.app {
+  max-width: 500px;
+  margin: auto;
+  padding: 0 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  font-size: 23px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+h1 span{
+  filter: drop-shadow(1px 1px 0.3px #7c08a0);
+}
+
+input {
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  width: 100%;
+  font-size: 1rem;
+}
+
+input[type="text"] {
+  height: 40px;
+  padding: 0.5rem 1rem;
+  border: 1px solid #999;
+}
+
+input[type="submit"] {
+  background-color: #7c08a0;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  height: 40px;
+  cursor: pointer;
+}
+
+input:focus {
+  outline: none;
+  border-color: #7c08a0;
+  box-shadow: 0px 0px 2px #7c08a0;
+}
+
+input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
 }
